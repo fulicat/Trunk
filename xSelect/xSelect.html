@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>xSelect</title>
+<link type="text/css" rel="stylesheet" href="base.css" />
+<style type="text/css">
+.wrapper{padding:50px;}
+h2{font-size:20px;font-weight:bold;}
+p{padding:10px;}
+</style>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="xSelect.js"></script>
+<script type="text/javascript">
+$(function(){
+	$('select.xSelectControl').xSelect();
+});
+</script>
+</head>
+<body>
+<div class="wrapper">
+	<h2>xSelect v1.2</h2>
+	<p>demo:</p>
+	<select class="xSelectControl" name="city">
+		<option value="">请选择</option>
+		<option value="上海">上海</option>
+		<option value="北京">北京</option>
+		<option value="广州">广州</option>
+	</select>
+	&nbsp;&nbsp;&nbsp;
+	<select class="xSelectControl" name="city2">
+		<option value="">请选择</option>
+		<option value="上海">上海</option>
+		<option value="北京">北京</option>
+		<option value="广州">广州</option>
+	</select>
+	&nbsp;&nbsp;&nbsp;
+	<select class="xSelectControl" name="city3">
+		<option value="">请选择</option>
+		<option value="上海">上海</option>
+		<option value="北京">北京</option>
+		<option value="广州">广州</option>
+	</select>
+	
+	<div>
+		<br/><br/><br/><br/>id:test1<br/>
+		<select id="test1" name="city3">
+			<option value="">请选择</option>
+			<option value="上海">上海</option>
+			<option value="北京">北京</option>
+			<option value="广州">广州</option>
+			<option value="上海">上海</option>
+			<option value="北京">北京</option>
+			<option value="广州">广州</option>
+			<option value="上海">上海</option>
+			<option value="北京">北京</option>
+			<option value="广州">广州</option>
+			<option value="上海">上海</option>
+			<option value="北京">北京</option>
+			<option value="广州">广州</option>
+		</select>
+		<span class="btn-white"><button onclick="$('#test1').xSelect();return false">&lt;&lt;初始化</button></span>
+		&nbsp;&nbsp;
+		<span class="btn-blue"><button onclick="alert($('#test1').val());return false">取值</button></span>
+	</div>
+</div>
+</body>
+</html>
