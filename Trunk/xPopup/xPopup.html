@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>xPopup</title>
+<link type="text/css" rel="stylesheet" href="xPopup.css"/>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+<script type="text/javascript" src="xPopup.js"></script>
+<script type="text/javascript">
+$(function(){
+	$('#btn1').click(function(){
+		$.xPopup.init({title: '百度', left: '50%', top: '50%', width: '750', height: '500', drag: true, mask: true, url: 'http://www.baidu.com'});
+		return false;
+	});
+});
+</script>
+</head>
+<body>
+<div>
+	<button id="btn1">打开百度</button>
+</div>
+</body>
+</html>
